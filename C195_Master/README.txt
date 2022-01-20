@@ -1,3 +1,8 @@
+This is an Appointment Scheduler Program with GUI that I created for a Java Software course as part of my Bachelor's Degree program
+The database that this program is connected to is no longer active as it was hosted by the school for assessment purposes only. I haven't gone back in to add a new database to the backend.
+
+
+
 Scheduling Application for WGU C195 Final
 Jacob Clingler, jclingl@wgu.edu, Version 1.0, 12/29/2020
 Using IntelliJ Ultimate 2020.3, JDK Amazon Corretto jdk11.0.9_12, JavaFX-SDK-11.0.2
