@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="304.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.AppointmentsByTypeReportController">
+   <children>
+       <Label fx:id="appointmentTypeByMonthTitleLabel" layoutX="22.0" layoutY="14.0" prefHeight="20.0" prefWidth="435.0" text="Number of Appointment Types By Month">
+           <font>
+               <Font name="Times New Roman Bold" size="18" />
+           </font>
+       </Label>
+      <TableView fx:id="appointmentTypeByMonthView" layoutX="132.0" layoutY="65.0" prefHeight="225.0" prefWidth="213.0">
+        <columns>
+          <TableColumn fx:id="appointmentMonthCountColumn" prefWidth="106.0" text="Month" />
+          <TableColumn fx:id="appointmentTypeCountColumn" prefWidth="106.0" text="Count" />
+        </columns>
+      </TableView>
+       <Button fx:id="exitButton" layoutX="368.0" layoutY="267.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" text="Exit" />
+   </children>
+</AnchorPane>

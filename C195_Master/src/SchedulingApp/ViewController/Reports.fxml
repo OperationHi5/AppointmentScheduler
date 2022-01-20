@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="225.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.ReportsController">
+    <children>
+        <Label fx:id="reportsLabel" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="216.0" text="Reports">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font></Label>
+        <HBox layoutX="20.0" layoutY="49.0" prefHeight="109.0" prefWidth="460.0">
+            <children>
+                <VBox alignment="CENTER" prefHeight="99.0" prefWidth="386.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label fx:id="appointmentTypesByMonthReportLabel" prefHeight="17.0" prefWidth="375.0" text="Generate report with the number of appointment types by month" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                        <Label fx:id="consultantScheduleReportLabel" prefHeight="17.0" prefWidth="371.0" text="Generate report with the schedule for each consultant" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                        <Label fx:id="customerScheduleReportLabel" prefHeight="17.0" prefWidth="370.0" text="Generate report with the scheduled meetings for each customer" />
+                    </children>
+                    <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </HBox.margin>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Button fx:id="generateAppointmentTypeByMonthButton" mnemonicParsing="false" onAction="#openAppointmentsByTypeWindow" prefHeight="30.0" prefWidth="85.0" text="Run Report" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                        <Button fx:id="generateConsultantScheduleButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Run Report" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                        <Button fx:id="generateCustomerScheduleButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Run Report" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Button fx:id="exitReportsButton" layoutX="393.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Exit" />
+    </children>
+</AnchorPane>

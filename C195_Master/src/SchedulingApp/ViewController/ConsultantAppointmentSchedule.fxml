@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.ConsultantAppointmentScheduleController">
+   <children>
+       <Label fx:id="appointmentByConsultantLabel" layoutX="54.0" layoutY="14.0" prefHeight="20.0" prefWidth="427.0" text="Appointment Schedule for Contact">
+           <font>
+               <Font name="Times New Roman Bold" size="18" />
+           </font>
+       </Label>
+       <Label fx:id="contactComboBoxLabel" layoutX="54.0" layoutY="61.0" prefHeight="17.0" prefWidth="127.0" text="Select Contact:" />
+       <ComboBox fx:id="contactComboBox" layoutX="188.0" layoutY="57.0" onAction="#getContactAppointments" prefHeight="25.0" prefWidth="146.0" />
+      <TableView fx:id="contactAppointmentScheduleView" layoutX="54.0" layoutY="94.0" prefHeight="200.0" prefWidth="698.0">
+        <columns>
+          <TableColumn fx:id="appointmentIdColumn" prefWidth="100.0" text="Appointment ID" />
+          <TableColumn fx:id="appointmentTitleColumn" prefWidth="66.0" text="Title" />
+            <TableColumn fx:id="appointmentTypeColumn" prefWidth="77.0" text="Type" />
+            <TableColumn fx:id="appointmentDescriptionColumn" prefWidth="143.0" text="Description" />
+            <TableColumn fx:id="appointmentStartColumn" prefWidth="120.0" text="Start Time" />
+            <TableColumn fx:id="appointmentEndColumn" prefWidth="113.0" text="End Time" />
+            <TableColumn fx:id="appointmentCustomerIdColumn" prefWidth="78.0" text="Customer ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="exitButton" layoutX="671.0" layoutY="355.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Exit" />
+   </children>
+</AnchorPane>

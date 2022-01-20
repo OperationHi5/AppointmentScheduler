@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.LogInController">
+    <children>
+        <Label fx:id="logInLabel" alignment="CENTER" layoutX="85.0" layoutY="57.0" prefHeight="60.0" prefWidth="412.0" text="Log In">
+            <font>
+                <Font name="Times New Roman Bold" size="32" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameField" layoutX="226.0" layoutY="179.0" />
+        <Label fx:id="usernameLabel" layoutX="114.0" layoutY="183.0" prefHeight="17.0" prefWidth="108.0" text="Username:" />
+        <PasswordField fx:id="passwordField" layoutX="226.0" layoutY="228.0" />
+        <Label fx:id="passwordLabel" layoutX="114.0" layoutY="228.0" prefHeight="25.0" prefWidth="101.0" text="Password:" />
+        <Button fx:id="submitButton" layoutX="273.0" layoutY="323.0" onAction="#submitLogIn" text="Submit" />
+        <Label fx:id="logInErrorLabel" textAlignment="CENTER" textFill="RED" />
+        <Label fx:id="logInSuccessLabel" textFill="GREEN" />
+        <Label fx:id="userLogInLocationLabel" layoutX="14.0" layoutY="369.0" textFill="BLUE" />
+    </children>
+</AnchorPane>

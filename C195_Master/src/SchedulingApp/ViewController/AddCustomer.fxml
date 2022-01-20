@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.AddCustomerController">
+    <children>
+        <Label fx:id="addCustomerTitleLabel" layoutX="151.0" layoutY="14.0" prefHeight="27.0" prefWidth="183.0" text="Add Customer" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <Label fx:id="customerNameLabel" layoutX="95.0" layoutY="100.0" prefHeight="17.0" prefWidth="107.0" text="Customer Name" />
+        <TextField fx:id="customerNameField" layoutX="215.0" layoutY="96.0" promptText="Customer Name" />
+        <Label fx:id="customerAddressLabel" layoutX="95.0" layoutY="154.0" prefHeight="17.0" prefWidth="107.0" text="Address" />
+        <TextField fx:id="customerAddressField" layoutX="215.0" layoutY="150.0" promptText="Street # Street Name, City" />
+        <Label fx:id="customerPostalCodeLabel" layoutX="95.0" layoutY="325.0" prefHeight="17.0" prefWidth="107.0" text="Postal Code" />
+        <TextField fx:id="postalCodeField" layoutX="215.0" layoutY="321.0" promptText="Postal Code" />
+        <Label fx:id="customerCountryLabel" layoutX="95.0" layoutY="210.0" prefHeight="17.0" prefWidth="107.0" text="Country" />
+      <ComboBox fx:id="countryComboBox" layoutX="215.0" layoutY="206.0" prefWidth="150.0" />
+        <Label fx:id="customerFirstLevelLabel" layoutX="95.0" layoutY="269.0" prefHeight="17.0" prefWidth="107.0" text="State/Province" />
+      <ComboBox fx:id="firstLevelDivComboBox" layoutX="215.0" layoutY="265.0" onMouseClicked="#setFirstLevelDivisions" prefWidth="150.0" />
+        <Label fx:id="customerPhoneLabel" layoutX="95.0" layoutY="378.0" prefHeight="17.0" prefWidth="107.0" text="Phone #" />
+        <TextField fx:id="customerPhoneField" layoutX="215.0" layoutY="374.0" promptText="Phone Number" />
+        <Button fx:id="saveCustomerButton" layoutX="225.0" layoutY="445.0" onAction="#saveNewCustomer" prefHeight="25.0" prefWidth="77.0" text="Save" />
+        <Button fx:id="cancelAddCustomerButton" layoutX="353.0" layoutY="445.0" onAction="#cancelAddingCustomer" prefHeight="25.0" prefWidth="77.0" text="Cancel" />
+    </children>
+</AnchorPane>

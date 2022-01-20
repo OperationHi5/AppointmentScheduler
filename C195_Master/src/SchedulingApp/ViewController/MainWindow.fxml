@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainWindowPane" prefHeight="770.0" prefWidth="1245.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.MainWindowController">
+    <children>
+        <TableView fx:id="tvAppointments" layoutX="53.0" layoutY="67.0" prefHeight="363.0" prefWidth="996.0">
+            <columns>
+                <TableColumn fx:id="tvAppointmentIdColumn" prefWidth="72.0" text="Appt. ID" />
+                <TableColumn fx:id="tvAppointmentTitleColumn" prefWidth="129.0" text="Title" />
+                <TableColumn fx:id="tvAppointmentDescriptionColumn" prefWidth="88.0" text="Description" />
+                <TableColumn fx:id="tvAppointmentLocationColumn" prefWidth="100.0" text="Location" />
+                <TableColumn fx:id="tvAppointmentContactColumn" prefWidth="143.0" text="Contact" />
+                <TableColumn fx:id="tvAppointmentTypeColumn" prefWidth="122.0" text="Type" />
+                <TableColumn fx:id="tvAppointmentStartColumn" minWidth="0.0" prefWidth="100.0" text="Start" />
+                <TableColumn fx:id="tvAppointmentEndColumn" prefWidth="148.0" text="End" />
+                <TableColumn fx:id="tvAppointmentCustomerIdColumn" prefWidth="93.0" text="Cust. ID" />
+            </columns>
+        </TableView>
+        <Label fx:id="weeklyCalendarButtonLabel" layoutX="974.0" layoutY="436.0" text="View By Week" />
+        <RadioButton fx:id="weeklyCalendarButton" layoutX="951.0" layoutY="436.0" onAction="#setWeeklyCalendar" />
+        <Label fx:id="monthlyCalendarButtonLabel" layoutX="817.0" layoutY="436.0" text="View By Month" />
+        <RadioButton fx:id="monthlyCalendarButton" layoutX="791.0" layoutY="436.0" onAction="#setMonthlyCalendar" />
+          <Button fx:id="addAppointmentButton" layoutX="1082.0" layoutY="67.0" mnemonicParsing="false" onAction="#openAddAppointment" prefHeight="30.0" prefWidth="150.0" text="Add Appointment" />
+          <Button fx:id="modifyAppointmentButton" layoutX="1082.0" layoutY="124.0" mnemonicParsing="false" onAction="#modifyAppointment" prefHeight="30.0" prefWidth="150.0" text="Modify Appointment" />
+        <Button fx:id="deleteAppointmentButton" layoutX="1082.0" layoutY="180.0" mnemonicParsing="false" onAction="#deleteAppointment" prefHeight="30.0" prefWidth="150.0" text="Delete Appointment" />
+          <Button fx:id="reportsButton" layoutX="1082.0" layoutY="234.0" mnemonicParsing="false" onAction="#openReports" prefHeight="30.0" prefWidth="150.0" text="Reports" />
+        <Button fx:id="exitButton" layoutX="1157.0" layoutY="722.0" mnemonicParsing="false" onAction="#closeApp" prefHeight="25.0" prefWidth="70.0" text="Exit" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+        <TableView fx:id="tvCustomers" layoutX="53.0" layoutY="503.0" prefHeight="267.0" prefWidth="996.0" GridPane.rowIndex="2">
+            <columns>
+                <TableColumn fx:id="tvCustomerIdColumn" prefWidth="50.0" />
+                <TableColumn fx:id="tvCustomersNameColumn" prefWidth="125.0" />
+                <TableColumn fx:id="tvCustomersAddressColumn" prefWidth="225.0" />
+                <TableColumn fx:id="tvCustomersPostalCodeColumn" prefWidth="85.0" />
+                <TableColumn fx:id="tvCustomerDivisionColumn" prefWidth="100.0" />
+                <TableColumn fx:id="tvCustomersCountryColumn" prefWidth="110.0" />
+                <TableColumn fx:id="tvCustomersPhoneColumn" prefWidth="134.0" />
+            </columns>
+        </TableView>
+        <Button fx:id="addCustomerButton" layoutX="1077.0" layoutY="504.0" mnemonicParsing="false" onAction="#addNewCustomer" prefHeight="30.0" prefWidth="150.0" text="Add Customer" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button fx:id="modifyCustomerButton" layoutX="1077.0" layoutY="566.0" mnemonicParsing="false" onAction="#openModifyCustomerWindow" prefHeight="30.0" prefWidth="150.0" snapToPixel="false" text="Modify Customer" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+        <Button fx:id="deleteCustomerButton" layoutX="1077.0" layoutY="628.0" onAction="#deleteCustomerFromDatabase" prefHeight="30.0" prefWidth="150.0" text="Delete Customer" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+    </children>
+</AnchorPane>
